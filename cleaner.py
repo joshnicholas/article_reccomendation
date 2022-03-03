@@ -92,11 +92,11 @@ combo = read.append(unread)
 
 combo['title_count'] = combo['resolved_title'].str.split(" ").str.len()
 
-vectored = combo[:5]
+# vectored = combo[:5]
 
 
 listo = []
-for index, row in vectored.iterrows():
+for index, row in combo.iterrows():
 
     texto = row['excerpt']
 
